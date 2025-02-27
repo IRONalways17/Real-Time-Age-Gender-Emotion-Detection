@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 480px;
+}
+
+video {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3367D6;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#loading {
+    margin: 10px;
+    font-weight: bold;
+    color: #4285F4;
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.face-info {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+.emotion-bar {
+    height: 10px;
+    margin: 2px 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.emotion-fill {
+    height: 100%;
+    background-color: #4285F4;
+}
+
+.gender {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.male {
+    color: #4285F4;
+}
+
+.female {
+    color: #EA4335;
+}
